@@ -15,7 +15,9 @@ use App\Http\Controllers\StudentController;
 */
 
 
-Route::get('/test', function () {return view('test1.index');});
+Route::get('/fetch', function () {return view('fetch.index');});
+
+Route::get('/jquery', function () {return view('jquery.index');});
 
 
 Route::get('/students',[StudentController::class,'index']);
